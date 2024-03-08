@@ -1,0 +1,76 @@
+.hero_wrapper {
+  height: 500px;
+  overflow: hidden;
+
+  & .container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    & .hero_content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 115px;
+
+      & .text_1 {
+        font-size: 32px;
+      }
+      & .text_2 {
+        font-size: 64px;
+        font-weight: bold;
+        color: rgb(19, 122, 240);
+      }
+      & .text_3 {
+        font-size: 32px;
+      }
+      & .text_4 {
+        font-size: 16px;
+        margin-top: 25px;
+      }
+
+      & .hero_social {
+        display: flex;
+        list-style: none;
+        margin-top: 25px;
+        color: #000;
+
+        & li {
+          margin-right: 10px;
+
+          & svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+      & .hero_image {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-image: url("https://scontent.fcnx2-1.fna.fbcdn.net/v/t1.6435-9/36840290_653891258295647_7754378954017865728_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFnCqNJEJXm5rIVXwchERez93oB-P4xFLP3egH4_jEUsw-Un5OxGdfo8ai8FIgRsi3yvi9arP21AqEtTuzPJG9b&_nc_ohc=cuIYo7-d61MAX8oCJRv&_nc_ht=scontent.fcnx2-1.fna&oh=00_AfAkA7lAGqq6DXVadhC1WXSsEY-4CMe7tnInuFRAAW_6AQ&oe=66118150");
+        background-size: cover;
+        background-position: center;
+        margin-right: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero_wrapper {
+    height: auto;
+
+    & .hero_content {
+      flex-direction: column;
+      margin: 50px 0;
+      padding: 20px;
+
+      & .hero_info, & .hero_image {
+        width: 100%;
+      }
+
+    }
+
+   
+  }
+}
