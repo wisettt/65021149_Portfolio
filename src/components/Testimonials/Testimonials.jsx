@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Testimonials.module.css";
-
+import Tilt from "react-parallax-tilt";
 function Testimonials() {
   return (
     <div className={styles.testi_con}>
@@ -10,10 +10,12 @@ function Testimonials() {
           <p>
             "He is talented and outstanding. He can do many things."
           </p>
+          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
           <img
             src="https://img.lovepik.com/free-png/20210924/lovepik-cartoon-doctor-png-image_401328360_wh1200.png"
             alt=""
           />
+          </Tilt>
           <h4>Toto</h4>
           <p className={styles.bio}>full-stack</p>
         </div>
@@ -21,10 +23,12 @@ function Testimonials() {
           <p>
           "He is excellent at web development and he is also a very friendly person, easy to get along with others."
           </p>
+          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
           <img
             src="https://img.lovepik.com/free-png/20220127/lovepik-teacher-png-image_401915365_wh1200.png"
             alt=""
           />
+          </Tilt>
           <h4>mew</h4>
           <p className={styles.bio}>Web Developer</p>
         </div>
@@ -32,10 +36,12 @@ function Testimonials() {
           <p>
           "He is a full-stack developer and also an expert in web development."
           </p>
+          <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
           <img
             src="https://e7.pngegg.com/pngimages/694/303/png-clipart-school-uniform-homo-sapiens-mangaka-boy-black-hair-boy-purple-brown.png"
             alt=""
           />
+          </Tilt>
           <h4>poy</h4>
           <p className={styles.bio}>Front-end developer.</p>
         </div>
